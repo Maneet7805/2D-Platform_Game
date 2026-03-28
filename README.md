@@ -146,7 +146,8 @@ The-Last-Christmas-Run/
 │   ├── editor/
 │   └── story/           
 │
-├── sprites/            
+├── sprites/
+│   ├── boss/         
 │   ├── player/
 │   └── enemies/
 │
@@ -158,6 +159,7 @@ The-Last-Christmas-Run/
 │   ├── items/
 │   ├── powerup/
 │   ├── fireworks/
+│   ├── story/
 │   └── ui/
 │
 └── tiles/              
