@@ -1,0 +1,276 @@
+{
+  "0": {
+    "name": "stone1",
+    "category": "solid",
+    "properties": {}
+  },
+  "1": {
+    "name": "stone2",
+    "category": "solid",
+    "properties": {}
+  },
+  "2": {
+    "name": "stone3",
+    "category": "solid",
+    "properties": {}
+  },
+  "3": {
+    "name": "stone4",
+    "category": "solid",
+    "properties": {}
+  },
+  "4": {
+    "name": "stone5",
+    "category": "solid",
+    "properties": {}
+  },
+  "5": {
+    "name": "stone6",
+    "category": "solid",
+    "properties": {}
+  },
+  "6": {
+    "name": "stone7",
+    "category": "solid",
+    "properties": {}
+  },
+  "7": {
+    "name": "stone8",
+    "category": "solid",
+    "properties": {}
+  },
+  "8": {
+    "name": "stone9",
+    "category": "solid",
+    "properties": {}
+  },
+  "9": {
+    "name": "stone10",
+    "category": "solid",
+    "properties": {}
+  },
+  "10": {
+    "name": "stone11",
+    "category": "solid",
+    "properties": {}
+  },
+  "11": {
+    "name": "stone12",
+    "category": "solid",
+    "properties": {}
+  },
+  "12": {
+    "name": "ice_tile",
+    "category": "solid",
+    "properties": {}
+  },
+  "13": {
+    "name": "xmas_tree1",
+    "category": "decorative",
+    "properties": {}
+  },
+  "14": {
+    "name": "xmas_tree2",
+    "category": "decorative",
+    "properties": {}
+  },
+  "15": {
+    "name": "xmas_tree3",
+    "category": "decorative",
+    "properties": {}
+  },
+  "16": {
+    "name": "xmas_tree4",
+    "category": "decorative",
+    "properties": {}
+  },
+  "17": {
+    "name": "candy_cane1",
+    "category": "decorative",
+    "properties": {}
+  },
+  "18": {
+    "name": "candy_cane2",
+    "category": "decorative",
+    "properties": {}
+  },
+  "19": {
+    "name": "candy_cane3",
+    "category": "decorative",
+    "properties": {}
+  },
+  "20": {
+    "name": "house_row1_1",
+    "category": "decorative",
+    "properties": {}
+  },
+  "21": {
+    "name": "house_row1_2",
+    "category": "decorative",
+    "properties": {}
+  },
+  "22": {
+    "name": "house_row1_3",
+    "category": "decorative",
+    "properties": {}
+  },
+  "23": {
+    "name": "house_row1_4",
+    "category": "decorative",
+    "properties": {}
+  },
+  "24": {
+    "name": "house_row2_1",
+    "category": "decorative",
+    "properties": {}
+  },
+  "25": {
+    "name": "house_row2_2",
+    "category": "decorative",
+    "properties": {}
+  },
+  "26": {
+    "name": "house_row2_3",
+    "category": "decorative",
+    "properties": {}
+  },
+  "27": {
+    "name": "house_row2_4",
+    "category": "decorative",
+    "properties": {}
+  },
+  "28": {
+    "name": "house_row3_1",
+    "category": "decorative",
+    "properties": {}
+  },
+  "29": {
+    "name": "house_row3_2",
+    "category": "decorative",
+    "properties": {}
+  },
+  "30": {
+    "name": "house_row3_3",
+    "category": "decorative",
+    "properties": {}
+  },
+  "31": {
+    "name": "house_row3_4",
+    "category": "decorative",
+    "properties": {}
+  },
+  "32": {
+    "name": "house_row4_1",
+    "category": "decorative",
+    "properties": {}
+  },
+  "33": {
+    "name": "house_row4_2",
+    "category": "decorative",
+    "properties": {}
+  },
+  "34": {
+    "name": "house_row4_3",
+    "category": "decorative",
+    "properties": {}
+  },
+  "35": {
+    "name": "house_row4_4",
+    "category": "decorative",
+    "properties": {}
+  },
+  "36": {
+    "name": "gift1",
+    "category": "collectible",
+    "properties": {}
+  },
+  "37": {
+    "name": "gift2",
+    "category": "collectible",
+    "properties": {}
+  },
+  "38": {
+    "name": "gift3",
+    "category": "collectible",
+    "properties": {}
+  },
+  "39": {
+    "name": "gift4",
+    "category": "collectible",
+    "properties": {}
+  },
+  "40": {
+    "name": "checkpoint",
+    "category": "checkpoint",
+    "properties": {}
+  },
+  "41": {
+    "name": "left_gate",
+    "category": "gate",
+    "properties": {}
+  },
+  "42": {
+    "name": "right_gate",
+    "category": "gate",
+    "properties": {}
+  },
+  "43": {
+    "name": "moving_platform_horizontal",
+    "category": "moving_platform",
+    "properties": {
+      "type": "horizontal",
+      "distance": 120,
+      "speed": 1
+    }
+  },
+  "44": {
+    "name": "moving_platform_vertical",
+    "category": "moving_platform",
+    "properties": {
+      "type": "vertical",
+      "distance": 120,
+      "speed": 1
+    }
+  },
+  "45": {
+    "name": "spike",
+    "category": "hazard",
+    "properties": {}
+  },
+  "46": {
+    "name": "Cannon",
+    "category": "hazard",
+    "properties": {}
+  },
+  "47": {
+    "name": "47",
+    "category": "enemy",
+    "properties": {}
+  },
+  "48": {
+    "name": "48",
+    "category": "enemy",
+    "properties": {}
+  },
+  "49": {
+    "name": "Health Powerup",
+    "category": "powerup",
+    "properties": {
+      "type": "health"
+    }
+  },
+  "50": {
+    "name": "Jump Boost Powerup",
+    "category": "powerup",
+    "properties": {
+      "type": "jump_boost"
+    }
+  },
+  "51": {
+    "name": "Shield Powerup",
+    "category": "powerup",
+    "properties": {
+      "type": "shield"
+    }
+  }
+}
