@@ -18,6 +18,11 @@
   ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 
 **A festive 2D platformer engineered with advanced procedural graphics, custom particle physics, and exciting boss battles.**
+<img width="200" alt="Screenshot 2026-03-28 050249" src="https://github.com/user-attachments/assets/5dfd1195-06e7-4718-b824-a412d6d54c4c" /> <img width="200" alt="Screenshot 2026-03-28 043811" src="https://github.com/user-attachments/assets/dfe104f2-1f84-4956-a3ee-255792a6898a" /> <img width="200" alt="Screenshot 2026-03-28 051743" src="https://github.com/user-attachments/assets/997b7b7a-6eee-40c3-afac-6a051052b8d3" />
+
+<img width="200" alt="Screenshot 2026-03-28 050551" src="https://github.com/user-attachments/assets/d546d4dd-9d81-4546-a1ff-e7b04f34d3ba" /> <img width="200" alt="Screenshot 2026-03-28 050616" src="https://github.com/user-attachments/assets/1ccad71a-0dfa-4fa8-b031-8b706349f911" /> <img width="200" alt="Screenshot 2026-03-28 052711" src="https://github.com/user-attachments/assets/421e8445-95b8-4afe-b65a-2ed8190f143c" />
+
+
 
 </div>
 
@@ -91,60 +96,60 @@ Collect presents to unlock gates, activate checkpoints, survive deadly blizzards
 The-Last-Christmas-Run/
 ├── main.py            
 ├── editor.py            
-├── requirements.txt      # Project dependencies
-├── LICENSE              # MIT License
-├── .gitignore          # Git ignore rules
+├── requirements.txt      
+├── LICENSE             
+├── .gitignore         
 │
-├── src/                 # Engine & Logic Source Code
-│   ├── blizzard.py      # Blizzard storm logic
-│   ├── boss.py          # Ice Golem Boss AI
-│   ├── boss_slam.py     # Boss slamming attacks
-│   ├── button.py        # UI Button implementation
-│   ├── camera.py        # Dynamic camera system
-│   ├── checkpoint.py    # Save/Respawn system
-│   ├── cinematic.py     # Intro cinematic manager
-│   ├── cinematic_outro.py # Defeat cinematic manager
-│   ├── collectible.py   # Presents & Items
-│   ├── enemy.py         # Standard enemy AI
-│   ├── fireworks.py     # Victory particle effects
-│   ├── gate.py          # Level transition logic
-│   ├── hazard.py        # Environmental dangers
-│   ├── hud.py           # Christmas-themed UI
-│   ├── level.py         # Level loading and state
-│   ├── menu.py          # Main & Pause menus
-│   ├── moving_platform.py # Physics-based platforms
-│   ├── particles.py     # Snow and trail systems
-│   ├── player.py        # Core movement & combat
-│   ├── player_effects.py # Visuals for the player
-│   ├── powerup.py       # Shield, Health, & Jump boosts
-│   ├── powerup_effects.py # Additive blending glows
-│   ├── projectiles.py    # Snowball & Ice shard physics
-│   ├── settings.py       # Game constants & config
-│   ├── smoke.py          # Fog & smoke particles
-│   ├── sound_manager.py  # Audio orchestration
-│   ├── stone_ring.py     # Boss attack patterns
-│   ├── tile.py           # Base tile representation
-│   ├── tile_config.py    # Tile properties database manager
-│   └── tile_loader.py    # Image loading and scaling
+├── src/                
+│   ├── blizzard.py      
+│   ├── boss.py         
+│   ├── boss_slam.py     
+│   ├── button.py       
+│   ├── camera.py        
+│   ├── checkpoint.py   
+│   ├── cinematic.py     
+│   ├── cinematic_outro.py 
+│   ├── collectible.py   
+│   ├── enemy.py         
+│   ├── fireworks.py    
+│   ├── gate.py         
+│   ├── hazard.py        
+│   ├── hud.py          
+│   ├── level.py        
+│   ├── menu.py         
+│   ├── moving_platform.py 
+│   ├── particles.py     
+│   ├── player.py        
+│   ├── player_effects.py 
+│   ├── powerup.py       
+│   ├── powerup_effects.py 
+│   ├── projectiles.py   
+│   ├── settings.py       
+│   ├── smoke.py         
+│   ├── sound_manager.py  
+│   ├── stone_ring.py     
+│   ├── tile.py           
+│   ├── tile_config.py    
+│   └── tile_loader.py    
 │
-├── data/                # Configuration & Level Data
+├── data/               
 │   ├── level0_data.csv
 │   ├── level1_data.csv
 │   ├── tile_database.json
-│   └── main.spec        # PyInstaller build config
+│   └── main.spec        
 │
-├── assets/              # UI & Narrative Assets
+├── assets/             
 │   ├── ui/
 │   ├── weapons/
 │   ├── powerup/
 │   ├── editor/
-│   └── story/           # Storyline video (storyline.mov)
+│   └── story/           
 │
-├── sprites/             # Sprite Sheets & Animations
+├── sprites/            
 │   ├── player/
 │   └── enemies/
 │
-├── sounds/              # Music & Sound Effects
+├── sounds/             
 │   ├── music/
 │   ├── player/
 │   ├── hazard/
@@ -154,7 +159,7 @@ The-Last-Christmas-Run/
 │   ├── fireworks/
 │   └── ui/
 │
-└── tiles/               # Raw Tile PNG Assets
+└── tiles/              
     ├── solid/
     ├── decor/
     ├── enemy/
