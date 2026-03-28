@@ -18,6 +18,7 @@
   ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 
 **A festive 2D platformer engineered with advanced procedural graphics, custom particle physics, and exciting boss battles.**
+
 <img width="200" alt="Screenshot 2026-03-28 050249" src="https://github.com/user-attachments/assets/5dfd1195-06e7-4718-b824-a412d6d54c4c" /> <img width="200" alt="Screenshot 2026-03-28 043811" src="https://github.com/user-attachments/assets/dfe104f2-1f84-4956-a3ee-255792a6898a" /> <img width="200" alt="Screenshot 2026-03-28 051743" src="https://github.com/user-attachments/assets/997b7b7a-6eee-40c3-afac-6a051052b8d3" />
 
 <img width="200" alt="Screenshot 2026-03-28 050551" src="https://github.com/user-attachments/assets/d546d4dd-9d81-4546-a1ff-e7b04f34d3ba" /> <img width="200" alt="Screenshot 2026-03-28 050616" src="https://github.com/user-attachments/assets/1ccad71a-0dfa-4fa8-b031-8b706349f911" /> <img width="200" alt="Screenshot 2026-03-28 052711" src="https://github.com/user-attachments/assets/421e8445-95b8-4afe-b65a-2ed8190f143c" />
