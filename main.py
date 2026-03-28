@@ -1,6 +1,8 @@
 import pygame
 import sys
 import os
+
+sys.path.append('src')
 import io
 import random
 import math
@@ -58,7 +60,7 @@ except Exception as e:
     background_img_level2.fill((150, 100, 100))
 
 class Game:
-    def __init__(self, level_file='level0_data.csv'):
+    def __init__(self, level_file='data/level0_data.csv'):
         self.screen = screen
         self.clock = pygame.time.Clock()
         self.running = True

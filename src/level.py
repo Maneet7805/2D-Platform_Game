@@ -21,7 +21,7 @@ background_img = None
 ICE_TILE_IDS = [12]
 
 class Level:
-    def __init__(self, level_file='level0_data.csv', bg_img=None):
+    def __init__(self, level_file='data/level0_data.csv', bg_img=None):
         global background_img
         if bg_img:
             background_img = bg_img

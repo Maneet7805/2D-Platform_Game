@@ -1,8 +1,11 @@
 import pygame
+import sys
+import os
 import button
 import csv
 import json
-import os
+
+sys.path.append('src')
 from tile_config import tile_db, TileCategory
 from tile_loader import TileLoader
 
@@ -164,7 +167,7 @@ def load_level_file(level_num):
     global world_data
     reset_world_data()
     
-    filename = f'level{level_num}_data.csv'
+    filename = f'data/level{level_num}_data.csv'
     try:
         with open(filename, newline='') as csvfile:
             reader = csv.reader(csvfile, delimiter=',')
@@ -435,7 +438,7 @@ while run:
               SCREEN_WIDTH + 10, SCREEN_HEIGHT - 15)
 
     if save_button.draw(screen):
-        with open(f'level{level}_data.csv', 'w', newline='') as csvfile:
+        with open(f'data/level{level}_data.csv', 'w', newline='') as csvfile:
             writer = csv.writer(csvfile, delimiter=',')
             for row in world_data:
                 writer.writerow(row)

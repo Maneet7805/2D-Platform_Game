@@ -21,7 +21,7 @@ class TileType:
         self.properties = properties or {}
 
 class TileDatabase:
-    def __init__(self, config_file='tile_database.json'):
+    def __init__(self, config_file='data/tile_database.json'):
         self.tiles = {}
         self.images = {}
         self.config_file = config_file

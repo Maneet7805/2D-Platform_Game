@@ -8,8 +8,6 @@
   ![NumPy](https://img.shields.io/badge/NumPy-1.24%2B-013243?logo=numpy&logoColor=white)
   ![CSV](https://img.shields.io/badge/data-CSV-orange)
   ![JSON](https://img.shields.io/badge/config-JSON-lightgrey)
-  ![Random](https://img.shields.io/badge/library-Random-blue)
-  ![Math](https://img.shields.io/badge/library-Math-yellow)
   ![2D Platformer](https://img.shields.io/badge/genre-2D%20Platformer-9cf)
   ![Boss Battles](https://img.shields.io/badge/feature-Boss%20Battles-red)
   ![Particle System](https://img.shields.io/badge/effect-Particle%20System-blue)
@@ -20,8 +18,6 @@
   ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 
 **A festive 2D platformer engineered with advanced procedural graphics, custom particle physics, and exciting boss battles.**
-
-
 
 </div>
 
@@ -37,18 +33,18 @@ Collect presents to unlock gates, activate checkpoints, survive deadly blizzards
 
 ## ✨ Key Features
 
-- **Smooth Platforming** – Responsive running, jumping, and shooting
-- **Ice Physics** – Ice tiles that affect movement dynamics
-- **Dynamic Hazards** – Cannons, spikes, and environmental dangers
-- **Power-up System** – Health, jump boosts, and shields
-- **Boss Battles** – Multi-phase Ice Golem encounters
-- **Blizzard Storms** – Weather hazards that reduce visibility
-- **Cinematic Sequences** – Boss intros and defeat scenes
-- **Checkpoint System** – Save progress and respawn safely
-- **Gift Collection** – Unlock gates by collecting presents
+- **Smooth Platforming** – Responsive running, jumping, and shooting.
+- **Ice Physics** – Ice tiles that affect movement dynamics and friction.
+- **Dynamic Hazards** – Cannons, spikes, and environmental dangers.
+- **Power-up System** – Health restoration, jump boosts, and invincibility shields.
+- **Boss Battles** – Multi-phase Ice Golem encounters with complex AI.
+- **Blizzard Storms** – Dynamic weather hazards that reduce visibility.
+- **Cinematic Sequences** – Scripted boss intros and defeat scenes.
+- **Checkpoint System** – Save progress and respawn safely at designated points.
+- **Gift Collection** – Unlock level-end gates by collecting all presents.
 
 ### 🌟 Advanced Special Effects Engineering
-- **Procedural Screen Effects**: Real-time Pythagorean distance calculations render dynamic frost and damage vignettes without image assets.
+- **Procedural Screen Effects**: Real-time Pythagorean distance calculations render dynamic frost and damage vignettes without static image assets.
 - **Additive Blending (`BLEND_RGBA_ADD`)**: Core powerup glows and player auras use Linear Dodge blending to physically illuminate the screen.
 - **Volumetric Parallax Fog**: The blizzard system uses Z-Depth sorting to categorize smoke into 3 parallax layers, faking volumetric 3D weather.
 - **Newtonian Kinematics & Ribbons**: Projectiles utilize trajectory history buffers for motion blur and calculate gravity/drag equations per frame.
@@ -58,11 +54,11 @@ Collect presents to unlock gates, activate checkpoints, survive deadly blizzards
 ## 🕹️ Gameplay & Controls
 
 ### Core Mechanics
-- Run and jump across challenging platforms
-- Shoot snowballs to defeat enemies
-- Collect presents to unlock level gates
-- Activate checkpoints to save progress
-- Unlock **Ice Shards** special ability after the first boss
+- Run and jump across challenging snowy platforms.
+- Shoot snowballs to defeat enemies and trigger switches.
+- Collect presents to unlock level gates.
+- Activate checkpoints to save your progress.
+- Unlock the **Ice Shards** special ability after defeating the first boss.
 
 ### Controls
 | Key | Action |
@@ -84,8 +80,8 @@ Collect presents to unlock gates, activate checkpoints, survive deadly blizzards
 | Power-up | Effect | Duration |
 |--------|--------|----------|
 | ❤️ Health | Restore 100 HP | Instant |
-| ⬆️ Jump Boost | Higher jump | 8 seconds |
-| 🛡️ Shield | Invincibility | 8 seconds |
+| ⬆️ Jump Boost | Significantly higher jump height | 8 seconds |
+| 🛡️ Shield | Complete invincibility | 8 seconds |
 
 ---
 
@@ -93,58 +89,62 @@ Collect presents to unlock gates, activate checkpoints, survive deadly blizzards
 
 ```text
 The-Last-Christmas-Run/
-├── main.py
-├── settings.py
-├── player.py
-├── player_effects.py
-├── level.py
-├── camera.py
-├── hud.py
-├── menu.py
-├── sound_manager.py
-├── cinematic.py
-├── cinematic_outro.py
-├── fireworks.py
+├── main.py              # Main entry point for the game
+├── editor.py            # Custom Level Editor tool
+├── requirements.txt      # Project dependencies
+├── LICENSE              # MIT License
+├── .gitignore          # Git ignore rules
 │
-├── enemies/
-│   ├── enemy.py
-│   ├── boss.py
-│   ├── boss_slam.py
-│   └── stone_ring.py
+├── src/                 # Engine & Logic Source Code
+│   ├── blizzard.py      # Blizzard storm logic
+│   ├── boss.py          # Ice Golem Boss AI
+│   ├── boss_slam.py     # Boss slamming attacks
+│   ├── button.py        # UI Button implementation
+│   ├── camera.py        # Dynamic camera system
+│   ├── checkpoint.py    # Save/Respawn system
+│   ├── cinematic.py     # Intro cinematic manager
+│   ├── cinematic_outro.py # Defeat cinematic manager
+│   ├── collectible.py   # Presents & Items
+│   ├── enemy.py         # Standard enemy AI
+│   ├── fireworks.py     # Victory particle effects
+│   ├── gate.py          # Level transition logic
+│   ├── hazard.py        # Environmental dangers
+│   ├── hud.py           # Christmas-themed UI
+│   ├── level.py         # Level loading and state
+│   ├── menu.py          # Main & Pause menus
+│   ├── moving_platform.py # Physics-based platforms
+│   ├── particles.py     # Snow and trail systems
+│   ├── player.py        # Core movement & combat
+│   ├── player_effects.py # Visuals for the player
+│   ├── powerup.py       # Shield, Health, & Jump boosts
+│   ├── powerup_effects.py # Additive blending glows
+│   ├── projectiles.py    # Snowball & Ice shard physics
+│   ├── settings.py       # Game constants & config
+│   ├── smoke.py          # Fog & smoke particles
+│   ├── sound_manager.py  # Audio orchestration
+│   ├── stone_ring.py     # Boss attack patterns
+│   ├── tile.py           # Base tile representation
+│   ├── tile_config.py    # Tile properties database manager
+│   └── tile_loader.py    # Image loading and scaling
 │
-├── hazards/
-│   ├── hazard.py
-│   ├── blizzard.py
-│   └── smoke.py
+├── data/                # Configuration & Level Data
+│   ├── level0_data.csv
+│   ├── level1_data.csv
+│   ├── tile_database.json
+│   └── main.spec        # PyInstaller build config
 │
-├── items/
-│   ├── collectible.py
-│   ├── powerup.py
-│   ├── gate.py
-│   └── checkpoint.py
-│
-├── projectiles/
-│   ├── projectiles.py
-│   └── moving_platform.py
-│
-├── tiles/
-│   ├── tile.py
-│   ├── tile_config.py
-│   ├── tile_loader.py
-│   └── tile_database.json
-│
-├── assets/
+├── assets/              # UI & Narrative Assets
 │   ├── ui/
 │   ├── weapons/
 │   ├── powerup/
 │   ├── editor/
-│   └── story/
+│   └── story/           # Storyline video (storyline.mov)
 │
-├── sprites/
+├── sprites/             # Sprite Sheets & Animations
 │   ├── player/
 │   └── enemies/
 │
-├── sounds/
+├── sounds/              # Music & Sound Effects
 │   ├── music/
 │   ├── player/
 │   ├── hazard/
@@ -154,106 +154,61 @@ The-Last-Christmas-Run/
 │   ├── fireworks/
 │   └── ui/
 │
-└── levels/
-    ├── level0_data.csv
-    ├── level1_data.csv
-    └── ...
+└── tiles/               # Raw Tile PNG Assets
+    ├── solid/
+    ├── decor/
+    ├── enemy/
+    ├── gate/
+    ├── collectible/
+    ├── checkpoint/
+    ├── hazard/
+    ├── powerup/
+    └── moving_platform/
 ```
 
 ---
 
-## 🚀 Installation
+## 🚀 Installation & Setup
 
-#### Prerequisites
-- Python 3.7+
-- pip
+### For Players
+1. Go to the [Releases](https://github.com/Maneet7805/2D-Platform_Game/releases) page.
+2. Download the latest `The-Last-Christmas-Run.zip`.
+3. Extract and run `The Last Christmas Run.exe`.
 
-#### Setup
-```bash
-git clone https://github.com/Maneet7805/2D-Platform_Game.git
-cd 2D-Platform_Game
-pip install pygame opencv-python numpy
-python main.py
-```
+### For Developers
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Maneet7805/2D-Platform_Game.git
+   cd 2D-Platform_Game
+   ```
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the game**:
+   ```bash
+   python main.py
+   ```
 
 ---
 
 ## 🎨 Level Editor
-The game includes a built-in level editor to create custom challenges.
+Create your own festive challenges using the built-in editor.
 
-### Run the Editor
-```bash
-python editor.py
-```
-
-### Editor Features
-- Category-based tile selection
-- Paint and erase tiles
-- Scroll through large maps
-- Save and load CSV levels
-- Tile previews and visual indicators
-
-### Creating Custom Levels
-1. Select a tile category
-2. Choose a tile
-3. Paint on the grid
-4. Save as `levelX_data.csv`
-5. Add the file to `LEVEL_FILES` in `settings.py`
-
----
-
-## ⚙️ Game Systems
-
-### Physics Engine
-- Gravity and jumping
-- Ice friction mechanics
-- Pixel-perfect collision
-- Smooth acceleration
-
-### Health System
-- 100 HP base health
-- Damage from hazards and enemies
-- Invincibility frames
-- Respawn at checkpoints
-
-### Enemy AI
-- Wolves with patrol logic
-- Cannons with timed firing
-- Ice Golem with complex attacks
-
-### Audio System
-- Positional sound effects
-- Menu, level, and boss music
-- Categorized SFX system
-- Adjustable volume controls
-
-### Cinematic System
-- Boss introductions
-- Boss defeat sequences
-- Video playback support
-- Dialogue boxes with speakers
-
----
-
-## 🛠️ Troubleshooting
-
-#### Game won’t start
-- Install dependencies
-- Verify asset folders exist
-
-#### Missing sounds
-- Game runs gracefully without sound files! 
-- Add custom sound effects to `/sounds` if needed.
-
-#### Editor errors
-- Check `tiles/` directory
-- Validate `tile_database.json`
+### Usage
+- **Launch**: `python editor.py`
+- **Controls**:
+  - `Left Click`: Place selected tile.
+  - `Right Click`: Erase tile.
+  - `Arrow Keys`: Scroll through the map.
+  - `SAVE`: Exports current layout to `data/levelX_data.csv`.
+  - `LOAD`: Imports data from `data/levelX_data.csv`.
 
 ---
 
 ## 👤 Author
 **Maneet Arvind Mehta**  
-GitHub: [https://github.com/Maneet7805](https://github.com/Maneet7805)
+GitHub: [Maneet7805](https://github.com/Maneet7805)
 
 ### Have Fun!
-Save Christmas, defeat the Ice Golem, and enjoy the adventure!
+Save Christmas, defeat the Ice Golem, and enjoy the holiday adventure!
