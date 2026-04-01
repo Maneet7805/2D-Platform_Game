@@ -3,9 +3,9 @@ import random
 import math
 import os
 import pathlib
-from settings import TILE_SIZE
+from settings import TILE_SIZE, ROOT_DIR
 
-BASE_DIR = pathlib.Path(__file__).parent
+BASE_DIR = ROOT_DIR
 
 class SnowballTrailParticle:
     def __init__(self, x, y, color):
@@ -143,12 +143,8 @@ class Snowball(pygame.sprite.Sprite):
 
     def load_snowball_image(self):
         try:
-            paths = [
-                "assets/weapons/snowball.png",
-                "snowball.png"
-            ]
-            
-            for path in paths:
+            for filename in paths:
+                path = os.path.join('assets', 'weapons', filename)
                 if os.path.exists(path):
                     try:
                         image = pygame.image.load(path).convert_alpha()
@@ -228,7 +224,7 @@ class IceShard(pygame.sprite.Sprite):
         self.rect = self.image.get_rect(center=(x, y))
 
     def load_ice_shard_image(self, direction):
-        shard_path = BASE_DIR / "assets" / "weapons" / "ice_shard.png"
+        shard_path = ROOT_DIR / "assets" / "weapons" / "ice_shard.png"
         
         if shard_path.exists():
             try:
@@ -252,7 +248,7 @@ class IceShard(pygame.sprite.Sprite):
             except Exception as e:
                 pass
 
-        alt_path = BASE_DIR / "sprites" / "ice_shard.png"
+        alt_path = ROOT_DIR / "sprites" / "ice_shard.png"
         
         if alt_path.exists():
             try:
