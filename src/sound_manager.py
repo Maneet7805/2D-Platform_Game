@@ -17,7 +17,7 @@ class SoundManager:
             "jump": 0.08,
             "run": 0.03,
             "walk": 0.3,
-            "ice_walk": 0.2,           
+            "ice_walk": 0.1,           
             "land": 0.1,
             "snowball": 0.1,
             "ice_shard": 0.3,
@@ -97,6 +97,7 @@ class SoundManager:
             return
         
         player_folder = os.path.join(sound_folder, "player")
+        powerup_folder = os.path.join(sound_folder, "powerup")
         if os.path.exists(player_folder):
             self.player_sounds = {
                 "jump": self.load_sound(os.path.join(player_folder, "jump.mp3")),
@@ -108,9 +109,8 @@ class SoundManager:
                 "snowball": self.load_sound(os.path.join(player_folder, "snowball.mp3")),
                 "collision": self.load_sound(os.path.join(player_folder, "collision.mp3")),
             }
-            self.player_sounds["ice_shard"] = self.load_sound(os.path.join(sound_folder, "powerup.ice_shard.mpeg"))
+            self.player_sounds["ice_shard"] = self.load_sound(os.path.join(powerup_folder, "ice_shard.mpeg"))
         
-        powerup_folder = os.path.join(sound_folder, "powerup")
         if os.path.exists(powerup_folder):
             self.powerup_sounds = {
                 "powerup": self.load_sound(os.path.join(powerup_folder, "powerup.mpeg")),
