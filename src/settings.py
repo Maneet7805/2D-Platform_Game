@@ -1,4 +1,9 @@
 import pygame
+import os
+import pathlib
+
+# Get the absolute path to the directory containing src/
+ROOT_DIR = pathlib.Path(__file__).parent.parent
 
 pygame.init()
 
@@ -36,7 +41,7 @@ SOLID_TILES = list(range(12))
 ENEMY_TILES = [18]
 GATE_TILES = [17]
 
-LEVEL_FILES = ['level0_data.csv', 'level1_data.csv']
+LEVEL_FILES = ['data/level0_data.csv', 'data/level1_data.csv']
 
 def scale_bg(img):
     ratio = img.get_width() / img.get_height()
