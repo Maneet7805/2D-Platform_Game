@@ -465,14 +465,16 @@ def main():
     menu = Menu(screen)
     result = menu.run()
     
-    if result == "start":
-        game = Game('level0_data.csv')
-        game.run()
-    elif result == "level0_data.csv" or result == "level1_data.csv":
-        game = Game(result)
-        game.run()
-    else:
-        game = Game('level0_data.csv')
+    if result:
+        # Prepend 'data/' if it's not already in the path
+        if not result.startswith('data/') and not result == "start":
+            level_file = f"data/{result}"
+        elif result == "start":
+            level_file = 'data/level0_data.csv'
+        else:
+            level_file = result
+            
+        game = Game(level_file)
         game.run()
     
     pygame.quit()
