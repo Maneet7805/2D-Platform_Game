@@ -26,7 +26,7 @@ class Player(pygame.sprite.Sprite):
         self.jump_boost_streak_timer = 0
         self.jump_boost_streak_duration = 16
 
-        self.shield_frames = self.load_shield_frames("assets/powerup/shield.png", frame_count=7)
+        self.shield_frames = self.load_shield_frames(os.path.join("assets", "powerup", "shield.png"), frame_count=7)
         self.shield_frame_index = 0
         self.shield_frame_timer = 0
         self.shield_frame_duration = 85
@@ -38,12 +38,12 @@ class Player(pygame.sprite.Sprite):
         self.shield_break_frame_timer = 0
         
         self.animations = {
-            "idle": AnimationLoader.load_animation("sprites/player/idle"),
-            "walk": AnimationLoader.load_animation("sprites/player/walk"),
-            "run": AnimationLoader.load_animation("sprites/player/run"),
-            "jump": AnimationLoader.load_animation("sprites/player/jump"),
-            "shoot": AnimationLoader.load_animation("sprites/player/shoot/shoot.png"),
-            "death": AnimationLoader.load_animation("sprites/player/death")
+            "idle": AnimationLoader.load_animation(os.path.join("sprites", "player", "idle")),
+            "walk": AnimationLoader.load_animation(os.path.join("sprites", "player", "walk")),
+            "run": AnimationLoader.load_animation(os.path.join("sprites", "player", "run")),
+            "jump": AnimationLoader.load_animation(os.path.join("sprites", "player", "jump")),
+            "shoot": AnimationLoader.load_animation(os.path.join("sprites", "player", "shoot", "shoot.png")),
+            "death": AnimationLoader.load_animation(os.path.join("sprites", "player", "death"))
         }
 
         self.walk_speed = PLAYER_SPEED
@@ -596,7 +596,8 @@ class Player(pygame.sprite.Sprite):
 
         current_time = pygame.time.get_ticks()
         if self.grounded and abs(self.vel_x) > 0.5 and not self.jump_pressed:
-            if current_time - self.last_footstep_time > self.footstep_delay:
+            delay = self.footstep_delay * 1.5 if self.on_ice else self.footstep_delay
+            if current_time - self.last_footstep_time > delay:
                 self.last_footstep_time = current_time
                 
                 if self.on_ice:
@@ -605,6 +606,10 @@ class Player(pygame.sprite.Sprite):
                     sound_manager.play_sound(sound_manager.player_sounds, "run")
                 else:
                     sound_manager.play_sound(sound_manager.player_sounds, "walk")
+        else:
+            for sound_key in ["ice_walk", "walk", "run"]:
+                if sound_key in sound_manager.player_sounds and sound_manager.player_sounds[sound_key]:
+                    sound_manager.player_sounds[sound_key].stop()
         
         self.hitbox.y += self.vel_y
         self.grounded = False
