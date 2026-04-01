@@ -558,8 +558,9 @@ class Menu:
             except Exception as e:
                 pass
         
-        for path in ["background_default.png", "background.png", "menu_bg.png"]:
+        for filename in ["background_default.png", "background.png", "menu_bg.png"]:
             try:
+                path = os.path.join('assets', 'editor', filename)
                 if os.path.exists(path):
                     self.background = safe_scale_bg(pygame.image.load(path).convert_alpha())
                     return
